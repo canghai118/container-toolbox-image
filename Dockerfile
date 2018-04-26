@@ -1,3 +1,6 @@
 FROM ubuntu:16.04
 
-CMD sleep 3600
+ADD entrypoint /usr/local/bin
+
+ENTRYPOINT entrypoint
+
