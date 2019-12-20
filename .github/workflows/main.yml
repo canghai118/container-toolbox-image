@@ -16,4 +16,5 @@ jobs:
     - uses: actions/checkout@v1
     - run: docker build -t canghai/toolbox:latest .
     - run: docker login -u "$DOCKERHUB_LOGIN_USER" -p "$DOCKERHUB_LOGIN_PASSWORD"
+    - run: docker push canghai/toolbox:latest
       
