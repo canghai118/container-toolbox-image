@@ -6,6 +6,9 @@ on:
 
 jobs:
   build:
+    env:
+      DOCKERHUB_LOGIN_USER: ${{ secret.DOCKERHUB_LOGIN_USER }}
+      DOCKERHUB_LOGIN_PASSWORD:  ${{ secret.DOCKERHUB_LOGIN_PASSWORD }}
 
     runs-on: ubuntu-latest
 
