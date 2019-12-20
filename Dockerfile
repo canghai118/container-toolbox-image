@@ -6,7 +6,9 @@ RUN apt-get update &&\
 		apt-get install -y \
 		vim less \
 		net-tools iputils-ping curl netcat \
-		nfs-common mysql-client
+		nfs-common mysql-client \
+        dnsutils 
+
 
 ADD entrypoint /usr/local/bin
 
